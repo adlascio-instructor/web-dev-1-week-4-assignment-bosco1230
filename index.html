@@ -5,7 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>login</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div>
+        <div class="logo">
+          <img src="images/favicon.ico" alt="logo" />
+          <p>camp-in</p>
+        </div>
+        <form class="login">
+          <img src="images/log-in.svg" alt="login" />
+          <h2>Login</h2>
+          <p>Insert your information below</p>
+          <label for="email">E-mail</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            placeholder="Type your email"
+            class="emailstyle"
+          />
+          <label for="password">Password</label>
+          <div class="show-pw">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              placeholder="Type your password"
+              class="pwstyle"
+            />
+          </div>
+
+          <label>
+            <input type="checkbox" name="remind" value="accepted" />
+            Remind me
+          </label>
+          <a
+            href="https://support.google.com/accounts/answer/7682439?hl=en"
+            id="forgot"
+            target="_blank"
+            title="Visit google.com"
+            >forgot my password</a
+          >
+
+          <input type="submit" id="login" value="Login" />
+          <div class="noPassword">
+            <p id="no">Dont't have an account</p>
+            <a
+              href="https://support.google.com/accounts/answer/27441?hl=en"
+              id="create"
+              target="_blank"
+              title="Visit google.com"
+              >Sign up!</a
+            >
+          </div>
+        </form>
+      </div>
+
+      <div class="image">
+        <img src="images/side-image.jpg" alt="image" class="pic" />
+      </div>
+    </div>
+  </body>
 </html>
