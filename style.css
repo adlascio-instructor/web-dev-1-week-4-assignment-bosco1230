@@ -44,7 +44,7 @@
     align-items:flex-start;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left:40px;
+    margin-left:60px;
   }
 
   .logo img {
@@ -59,9 +59,9 @@
     justify-items: center;
   }
   form.login {
-    width: 90vw;
+    width: 100vw;
     background-color: var(--background);
-    
+  
   }
   form.login input[type="text"],
   form.login input[type="password"] {
@@ -158,15 +158,16 @@ body{
     
       
       #email{
-        border: 3px solid var(--primary-color);
-        background-image: url("images/mail-focus.svg");
+        border: 3px solid var(--text-base);
+        background-image: url("images/mail.svg");
         background-repeat: no-repeat;
         background-position: left center;
         padding-left: 40px;
       }
       #email:focus{
         border:3px solid var(--primary-color);
-        outline: var(--primary-color)
+        outline: var(--primary-color);
+        background-image: url("images/mail-focus.svg");
       }
       form.login input[type="submit"] {
         width: 100%;
@@ -181,7 +182,9 @@ body{
         padding-right: 40px;
       }
       #password:focus{
-        outline: var(--text-base)
+        border:3px solid var(--primary-color);
+        outline: var(--primary-color);
+        background-image: url("images/lock-focus.svg");
       }
       #password::-ms-reveal {
         display: none;
