@@ -164,6 +164,10 @@ body{
         background-position: left center;
         padding-left: 40px;
       }
+      #email:focus{
+        border:3px solid var(--primary-color);
+        outline: var(--primary-color)
+      }
       form.login input[type="submit"] {
         width: 100%;
         box-sizing: border-box;
@@ -175,6 +179,9 @@ body{
         background-position: left center, right center;
         padding-left: 40px;
         padding-right: 40px;
+      }
+      #password:focus{
+        outline: var(--text-base)
       }
       #password::-ms-reveal {
         display: none;
@@ -217,7 +224,7 @@ body{
       .emailstyle, .pwstyle {
         font-family: "Arial", "sans-serif";
       }
-
+     
      
       
       
